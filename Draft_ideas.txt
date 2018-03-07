@@ -1,0 +1,12 @@
+Données sur les bibliothèques: https://opendata.paris.fr/explore/?sort=modified&q=biblioth%C3%A8que
+
+Thèmes pour une page responsive et élégante: https://getbootstrap.com/ & https://colorlib.com/wp/bootstrap-website-templates/
+
+Idées pour raconter l'histoire: faire plusieurs petits "Flipbook" en JavaScript sur une étagère:
+  -http://www.turnjs.com/
+  -https://jqueryhouse.com/20-best-jquery-flipbook-plugins/
+
+Éléments graphiques utiles: 
+  -Heatmap: https://www.patrick-wied.at/static/heatmapjs/
+  -Plot.ly: https://plot.ly/
+  
