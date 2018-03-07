@@ -10,3 +10,12 @@ Idées pour raconter l'histoire: faire plusieurs petits "Flipbook" en JavaScript
   -Heatmap: https://www.patrick-wied.at/static/heatmapjs/
   -Plot.ly: https://plot.ly/
   -Carto: https://carto.com/
+
+Visualisations possibles (du + simple au + compliqué a priori) :
+- les titres les plus empruntés à Paris. Années disponibles : 2012, 2013, 2017 : quel genre, quel nom, quel auteur ?
+- les titres les plus empruntés par bibliothèque en 2012 : voir des inégalités entre quartiers. 
+- cartographie des bibliothèques parisiennes et heatmap : 
+    - database "Equipements de proximité" pour cartographier les bibliothèques (2013). Faire une heatmap de Paris pour voir la    "couverture" d'une bibliothèque
+    - Reconstituer le catalogue de chaque bibliothèque à partir de la database catalogue de toutes les bibli
+    https://opendata.paris.fr/explore/dataset/tous-les-documents-des-bibliotheques-de-pret/export/
+    - Croiser avec les données du recensement (2014) de l'Insee pour regarder les inégalités selon par exemple le nombre de personnes/enfants par arrondissement
