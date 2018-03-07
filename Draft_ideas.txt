@@ -9,4 +9,4 @@ Idées pour raconter l'histoire: faire plusieurs petits "Flipbook" en JavaScript
 Éléments graphiques utiles: 
   -Heatmap: https://www.patrick-wied.at/static/heatmapjs/
   -Plot.ly: https://plot.ly/
-  
+  -Carto: https://carto.com/
