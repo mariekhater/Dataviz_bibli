@@ -11,6 +11,13 @@ Idées pour raconter l'histoire: faire plusieurs petits "Flipbook" en JavaScript
   -Plot.ly: https://plot.ly/
   -Carto: https://carto.com/
   -Zoomable circle: https://bl.ocks.org/mbostock/7607535
+  
+  Idées des années précédentes sympas:
+  -Migrations : https://lumieresurlesmigrations.github.io/dataviz/ 
+     1. La carte de l'Europe avec possibilité de se déplacer sur les différents pays et voir des infos dessus (l'utiliser pour la carte         par arrondissement).
+     2. Les petits bonhommes pour représenter des personnages (=> on pourrait utiliser des bouquins)
+  - Vélibs : http://matthieuctvt.github.io/degradation.html
+      La carte ou on peut zoomer par arrondissement
 
 <<<<<< patch-2
 
@@ -26,3 +33,6 @@ Visualisations possibles (du + simple au + compliqué a priori) :
     - Reconstituer le catalogue de chaque bibliothèque à partir de la database catalogue de toutes les bibli
     https://opendata.paris.fr/explore/dataset/tous-les-documents-des-bibliotheques-de-pret/export/
     - Croiser avec les données du recensement (2014) de l'Insee pour regarder les inégalités selon par exemple le nombre de personnes/enfants par arrondissement
+    
+    
+    
