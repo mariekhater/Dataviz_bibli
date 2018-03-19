@@ -35,7 +35,7 @@ function mouseOver(d){
 			
 			d3.select("#tooltip").html(tooltip(d))  
 				.style("left", (450 + "px")) 
-				.style("top", (120 + "px"));
+				.style("top", (147 + "px"));
 				//.style("left", (d.x + "px"))     
 				//.style("top", (d.y + "px"));
 		}
