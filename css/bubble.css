@@ -26,12 +26,12 @@
   pointer-events: none;
 }
 	#tooltip {   
-		position: relative;           
+		position: absolute;           
 		text-align: center;
 		padding: 20px;             
 		margin: 10px;
 		font: 12px sans-serif;        
-		background: lightsteelblue;   
+		background: #b0c4de;   
 		border: 1px;      
 		border-radius: 2px;           
 		pointer-events: none;         
