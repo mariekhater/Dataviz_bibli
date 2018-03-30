@@ -23,11 +23,18 @@ d3.json("jolie_data.json", function(error, root) {
       nodes = pack(root).descendants(),
       view;
   
-function tooltip(d){	/* function to create html content string in tooltip div. */
+function tooltip(d){
+	if d.data.name == "non renseigné"{
+		/* function to create html content string in tooltip div. */
+		return "<h4>"+d.data.name+"</h4><table>"+
+			"<tr><td>Nombre de prêts : </td><td>"+(d.data.size)+"</td></tr>"+
+			"</table>";
+	} else {
 		return "<h4>"+d.data.name+"</h4><table>"+
 			"<tr><td>Auteur : </td><td>"+(d.data.auteur)+"</td></tr>"+
 			"<tr><td>Nombre de prêts : </td><td>"+(d.data.size)+"</td></tr>"+
 			"</table>";
+	}
 	}
   
 function mouseOver(d){
