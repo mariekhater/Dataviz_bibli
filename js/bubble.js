@@ -25,7 +25,7 @@ d3.json("jolie_data.json", function(error, root) {
   
 function tooltip(d){	/* function to create html content string in tooltip div. */
 		return "<h4>"+d.data.name+"</h4><table>"+
-			"<tr><td>Auteur : </td><td>auteur</td></tr>"+
+			"<tr><td>Auteur : </td><td>"+(d.data.auteur)+"</td></tr>"+
 			"<tr><td>Nombre de prêts : </td><td>"+(d.data.size)+"</td></tr>"+
 			"</table>";
 	}
