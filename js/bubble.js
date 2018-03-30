@@ -24,7 +24,7 @@ d3.json("jolie_data.json", function(error, root) {
       view;
   
 function tooltip(d){
-	if (d.data.name == "non renseigné"){
+	if (d.data.name == "Non renseigné"){
 		/* function to create html content string in tooltip div. */
 		return "<h4>"+d.data.name+"</h4><table>"+
 			"<tr><td>Nombre de prêts : </td><td>"+(d.data.size)+"</td></tr>"+
