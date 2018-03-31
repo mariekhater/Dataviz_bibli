@@ -6,7 +6,7 @@
       "name": "Bande dessinée",
       "children": [
         {
-          "name": "jeunesse",
+          "name": "Jeunesse",
           "children": [
             {"name": "Au coeur du maelström", "auteur": "Vehlmann, Fabien", "size": 804},
             {"name": "Une jolie vache", "auteur": "Guibert, Emmanuel", "size": 803},
@@ -387,7 +387,7 @@
             {"name": "Va au panier", "auteur": "Davis, Jim", "size": 620}
           ]
         },
-        {"name": "adulte",
+        {"name": "Adulte",
           "children": [
             {"name": "Astérix chez les Belges", "auteur": "Goscinny, René", "size": 801},
             {"name": "Fairy Tail. 16", "auteur": "Mashima, Hiro", "size": 784},
@@ -458,7 +458,7 @@
             {"name": "Tout schuss", "auteur": "Davis, Jim", "size": 616}
           ]
         },
-        {"name": "ado",
+        {"name": "Ado",
           "children": [
             {"name": "Fairy Tail. 6", "auteur": "Mashima, Hiro", "size": 763},
             {"name": "Fairy Tail. 2", "auteur": "Mashima, Hiro", "size": 748},
@@ -581,7 +581,7 @@
       "name": "Livre",
       "children": [
         {
-          "name": "jeunesse",
+          "name": "Jeunesse",
           "children": [
             {"name": "Le théâtre de Barbapapa", "auteur": "Tison, Annette", "size": 801},
             {"name": "L'élixir de jouvence", "auteur": "Gilson, François", "size": 788},
@@ -711,7 +711,7 @@
           ]
         },
         {
-          "name": "adulte",
+          "name": "Adulte",
           "children": [
             {"name": "Un lieu incertain", "auteur": "Vargas, Fred", "size": 791},
             {"name": "Une femme fuyant l'annonce", "auteur": "Grossman, David", "size": 783},
@@ -753,7 +753,7 @@
           ]
         },
         {
-          "name": "ado",
+          "name": "Ado",
           "children": [
             {"name": "La révolte", "auteur": "Collins, Suzanne", "size": 809},
             {"name": "L'embrasement", "auteur": "Collins, Suzanne", "size": 711},
@@ -766,7 +766,7 @@
       "name": "Revue",
       "children": [
         {
-          "name": "adulte",
+          "name": "Adulte",
           "children": [
             {"name": "Rustica hebdo", "auteur": "Non renseigné", "size": 781},
             {"name": "SVM Mac", "auteur": "Non renseigné", "size": 612},
@@ -899,7 +899,7 @@
           ]
         },
         {
-          "name": "jeunesse",
+          "name": "Jeunesse",
           "children": [
             {"name": "Images doc : un trésor d'images pour tout savoir", "auteur": "Non renseigné", "size": 4538},
             {"name": "Wakou", "auteur": "Non renseigné", "size": 4200},
@@ -959,7 +959,7 @@
           ]
         },
         {
-          "name": "ado",
+          "name": "Ado",
           "children": [
             {"name": "Okapi", "auteur": "Non renseigné", "size": 14399},
             {"name": "Science & vie junior", "auteur": "Non renseigné", "size": 7309},
