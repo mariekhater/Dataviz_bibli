@@ -91,9 +91,9 @@ function mouseOut(){
     transition.selectAll("text")
       .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
         .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
-        .style("fill-opacity", function(d) { return d.children ? 1 : 0; })
+        //.style("fill-opacity", function(d) { return d.children ? 1 : 0; })
         .on("start", function(d) { if (d.parent === focus && d.children ) this.style.display = "inline"; })
-        .on("start", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+        .on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
 
     transition.selectAll("circle")
        .style("fill-opacity", function(d) { return d.parent === focus || d === focus? 1 : 0; })
