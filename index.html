@@ -104,16 +104,6 @@
           </div>
         </div>
       </div>
-      <div id="flipbook">
-	<div class="hard"> Turn.js </div>
-	<div class="hard"></div>
-	<div> Page 1 </div>
-	<div> Page 2 </div>
-	<div> Page 3 </div>
-	<div> Page 4 </div>
-	<div class="hard"></div>
-	<div class="hard"></div>
-</div>
     </section>
 
 
@@ -248,48 +238,7 @@
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
 
-   <!-- Flipbook -->
-	  <script type="text/javascript">
-
-function loadApp() {
-
-	// Create the flipbook
-
-	$('.flipbook').turn({
-			// Width
-
-			width:922,
-			
-			// Height
-
-			height:600,
-
-			// Elevation
-
-			elevation: 50,
-			
-			// Enable gradients
-
-			gradients: true,
-			
-			// Auto center this flipbook
-
-			autoCenter: true
-
-	});
-}
-
-// Load the HTML4 version if there's not CSS transform
-
-yepnope({
-	test : Modernizr.csstransforms,
-	yep: ['js/lib/turn.js'],
-	nope: ['js/lib/turn.html4.min.js'],
-	both: ['css/basic.css'],
-	complete: loadApp
-});
-
-</script>
+  
 	  
   </body>
 
