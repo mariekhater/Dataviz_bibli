@@ -73,7 +73,7 @@ function mouseOut(){
   var node = g.selectAll("circle,text");
 
   svg
-      .style("background", color(-1))
+      .style("background", "white")
       .on("click", function() { zoom(root); });
 
   zoomTo([root.x, root.y, root.r * 2 + margin]);
