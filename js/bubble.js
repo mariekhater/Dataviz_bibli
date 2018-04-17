@@ -45,6 +45,10 @@ function mouseOver(d){
 				.style("top", (147 + "px"));
 				//.style("left", (d.x + "px"))     
 				//.style("top", (d.y + "px"));
+			d3.select("#text_to_change").html(tooltip(d))  
+				.style("left", (83 + "px")) 
+				.style("top", (147 + "px"));
+	
 		}
 		
 function mouseOut(){
