@@ -43,7 +43,7 @@ function text_modif(focus){
 	} else if (focus.data.name == "Bande dessinée"){
 		return "Les BD c'est XX %";
 	} else if (focus.data.name == "Roman"){
-		return "Les lecteurs des bibliothèques empruntent quand même des livres ! Les auteurs à succès y sont bien représentés : <font color="red">Fred Vargas</font>, <font color="green">Guillaume Musso</font>, etc.";
+		return "Les lecteurs des bibliothèques empruntent quand même des livres ! Les auteurs à succès y sont bien représentés : <font color='red'>Fred Vargas</font>, <font color='green'>Guillaume Musso</font>, etc.";
 	} else {
 	return "<h4>"+focus.data.name+"</h4>"
 	}
