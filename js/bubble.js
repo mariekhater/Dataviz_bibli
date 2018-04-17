@@ -75,7 +75,7 @@ function mouseOut(){
     .data(nodes)
     .enter().append("circle")
       .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
-      .style("fill", color_filling(d))
+      .style("fill", function(d) { return d.children ? color(d.depth) : null; })
       .style("fill-opacity", function(d) { return d.parent === root || d === root? 1 : 0; })
       .style("display", function(d) { return d.parent === root || d === root? "inline" : "none"; })
       .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); })
