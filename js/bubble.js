@@ -61,7 +61,7 @@ function mouseOver(d){
 
 function color_filling(d){
 	if (d.data.auteur == "Saint-Mars, Dominique de" || d.data.auteur == "Saint Mars, Dominique de"){
-		return hsl(0, 100%, 50%);
+		return color(d.depth);
 	} else {
 	return d.children ? color(d.depth) : null;
 	}
