@@ -44,7 +44,7 @@ function text_modif(focus0, focus){
 		return "Les BD c'est XX %";
 	} else if (focus0.data.name == "Livre" && focus.data.name == "Jeunesse"){
 		return "Les livres jeunesses ? Que des Max et Lili !!";
-	} else if (focus.data.name == "Roman"){
+	} else if (focus0.data.name == "Livre" && focus.data.name == "Adulte"){
 		return "Les lecteurs des bibliothèques empruntent quand même des livres ! Les auteurs à succès y sont bien représentés : <font color='red'>Fred Vargas</font>, <font color='green'>Guillaume Musso</font>, etc.";
 	} else {
 	return "<h4>"+focus.data.name+"</h4>"
