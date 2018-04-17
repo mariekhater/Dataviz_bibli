@@ -61,7 +61,7 @@ function mouseOver(d){
 
 function color_filling(d){
 	if (d.data.auteur == "Saint-Mars, Dominique de" || d.data.auteur == "Saint Mars, Dominique de"){
-		return color(d.depth);
+		return color(d.depth - 1);
 	} else {
 	return d.children ? color(d.depth) : null;
 	}
@@ -75,7 +75,7 @@ function mouseOut(){
     .data(nodes)
     .enter().append("circle")
       .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
-      .style("fill", function(d) { return d.children ? color(d.depth) : null; })
+      .style("fill", function(d) { return color_filling(d) })
       .style("fill-opacity", function(d) { return d.parent === root || d === root? 1 : 0; })
       .style("display", function(d) { return d.parent === root || d === root? "inline" : "none"; })
       .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); })
