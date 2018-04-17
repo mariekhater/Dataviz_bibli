@@ -37,11 +37,13 @@ function tooltip(d){
 	}
 	}
 
-function text_modif(focus){
+function text_modif(focus0, focus){
 	if (focus.data.name == "Revue"){
 		return "Texte super rigolo sur combien les revues c'est cool";
 	} else if (focus.data.name == "Bande dessinée"){
 		return "Les BD c'est XX %";
+	} else if (focus0.data.name == "Livre" && focus.data.name == "Jeunesse"){
+		return "Les livres jeunesses ? Que des Max et Lili !!";
 	} else if (focus.data.name == "Roman"){
 		return "Les lecteurs des bibliothèques empruntent quand même des livres ! Les auteurs à succès y sont bien représentés : <font color='red'>Fred Vargas</font>, <font color='green'>Guillaume Musso</font>, etc.";
 	} else {
@@ -100,7 +102,7 @@ function mouseOut(){
 
   function zoom(d) {
     var focus0 = focus; focus = d;
-	d3.select("#text_to_change").html(text_modif(focus))
+	d3.select("#text_to_change").html(text_modif(focus0, focus))
     var transition = d3.transition()
         .duration(d3.event.altKey ? 7500 : 750)
         .tween("zoom", function(d) {
