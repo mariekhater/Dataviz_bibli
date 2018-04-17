@@ -42,8 +42,9 @@ function text_modif(focus){
 		return "Texte super rigolo sur combien les revues c'est cool";
 	} elif (focus.data.name == "Bande dessinée"){
 		return "Les BD c'est XX %";
-	}
+	} else {
 	return "<h4>"+focus.data.name+"</h4>"
+	}
 }
   
 function mouseOver(d){
