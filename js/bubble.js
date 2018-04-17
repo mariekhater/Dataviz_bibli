@@ -38,7 +38,7 @@ function tooltip(d){
 	}
 
 function text_modif(focus){
-	
+	return "<h4>"+focus+"</h4>"
 }
   
 function mouseOver(d){
@@ -84,7 +84,7 @@ function mouseOut(){
 
   function zoom(d) {
     var focus0 = focus; focus = d;
-	
+	d3.select("#text_to_change").html(text_modif(focus))
     var transition = d3.transition()
         .duration(d3.event.altKey ? 7500 : 750)
         .tween("zoom", function(d) {
