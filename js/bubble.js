@@ -38,14 +38,14 @@ function tooltip(d){
 	}
 
 function text_modif(focus){
-	return "<h4>"+focus+"</h4>"
+	return "<h4>"+focus.data.name+"</h4>"
 }
   
 function mouseOver(d){
 			d3.select("#tooltip").transition().duration(200).style("opacity", .9);      
 			
 			d3.select("#tooltip").html(tooltip(d))  
-				.style("center", (224 + "px")) 
+				.style("left", (224 + "px")) 
 				.style("top", (447 + "px"));
 				//.style("left", (d.x + "px"))     
 				//.style("top", (d.y + "px"));
