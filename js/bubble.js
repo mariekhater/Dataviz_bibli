@@ -42,6 +42,8 @@ function text_modif(focus){
 		return "Texte super rigolo sur combien les revues c'est cool";
 	} elif (focus.data.name == "Bande dessinée"){
 		return "Les BD c'est XX %";
+	} elif (focus.data.name == "Roman"){
+		return "Les lecteurs des bibliothèques empruntent quand même des livres ! Les auteurs à succès y sont bien représentés : <font color="red">Fred Vargas</font>, <font color="green">Guillaume Musso</font>, etc.";
 	} else {
 	return "<h4>"+focus.data.name+"</h4>"
 	}
