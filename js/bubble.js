@@ -12,7 +12,7 @@ var pack = d3.pack()
     .size([diameter - margin, diameter - margin])
     .padding(2);
 
-d3.json("jolie_data.json", function(error, root) { 
+d3.json("jolie_data.json", function(error, root) {
   if (error) throw error;
 
   root = d3.hierarchy(root)
@@ -22,7 +22,7 @@ d3.json("jolie_data.json", function(error, root) {
   var focus = root,
       nodes = pack(root).descendants(),
       view;
-  
+
 function tooltip(d){
 	if (d.data.auteur == "Non renseigné"){
 		/* function to create html content string in tooltip div. */
@@ -37,25 +37,27 @@ function tooltip(d){
 	}
 	}
 
-  
+function text_modif(focus){
+  		return "<h4>"+focus+"</h4><table align="center">"+
+  			"<tr><td>Auteur : </td><td> "+(d.data.auteur)+"</td></tr>"+
+  			"<tr><td>Prêts : </td><td> "+(d.data.size)+"</td></tr>"+
+  			"</table>";
+}
+
 function mouseOver(d){
-			d3.select("#tooltip").transition().duration(200).style("opacity", .9);      
-			
-			d3.select("#tooltip").html(tooltip(d))  
-				.style("center", (224 + "px")) 
+			d3.select("#tooltip").transition().duration(200).style("opacity", .9);
+
+			d3.select("#tooltip").html(tooltip(d))
+				.style("center", (224 + "px"))
 				.style("top", (447 + "px"));
-				//.style("left", (d.x + "px"))     
+				//.style("left", (d.x + "px"))
 				//.style("top", (d.y + "px"));
-			d3.select("#text_to_change").html('Coucou je suis Marie et je suis casse-couille')  
-				.style("left", (83 + "px")) 
-				.style("top", (147 + "px"));
-	
 		}
-		
+
 function mouseOut(){
-			d3.select("#tooltip").transition().duration(500).style("opacity", 0);      
+			d3.select("#tooltip").transition().duration(500).style("opacity", 0);
 		}
-  
+
   var circle = g.selectAll("circle")
     .data(nodes)
     .enter().append("circle")
@@ -85,6 +87,8 @@ function mouseOut(){
 
   function zoom(d) {
     var focus0 = focus; focus = d;
+
+	d3.select("#text_to_change").html(text_modif(focus)) ;
 
     var transition = d3.transition()
         .duration(d3.event.altKey ? 7500 : 750)
