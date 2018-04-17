@@ -38,6 +38,11 @@ function tooltip(d){
 	}
 
 function text_modif(focus){
+	if (focus.data.name == "Revue"){
+		return "Texte super rigolo sur combien les revues c'est cool";
+	} elif (focus.data.name == "Bande dessinée"){
+		return "Les BD c'est XX %";
+	}
 	return "<h4>"+focus.data.name+"</h4>"
 }
   
