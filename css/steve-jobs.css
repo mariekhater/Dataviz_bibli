@@ -321,6 +321,7 @@ body, ul, table, form{
 }
 
 .sj-book .table-contents a{
+	font-family: "Stempel-Garamond-W01-Roman";
 	float:left;
 	width:100%;
 	clear:both;
