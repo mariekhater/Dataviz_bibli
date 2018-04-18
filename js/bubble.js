@@ -63,7 +63,7 @@ function mouseOver(d){
 
 function color_filling(d){
 	if (d.data.auteur == "Saint-Mars, Dominique de" || d.data.auteur == "Saint Mars, Dominique de" || d.data.auteur == "Vargas, Fred"){
-		return "hsl(0, 100%, 50%)";
+		return "hsl(191,55.1%,65.1%)";
 	} else if (d.data.auteur == "Musso, Guillaume"){
 		return "hsl(120, 100%, 50%)";
 	} else {
