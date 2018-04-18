@@ -45,7 +45,7 @@ function text_modif(focus0, focus){
 	} else if (focus0.data.name == "Livre"){
 		return "Les lecteurs des bibliothèques empruntent quand même des livres ! Les auteurs à succès y sont bien représentés : Fred Vargas, Guillaume Musso, etc. Chez les enfants, c’est la série des Max et Lili qui est incontestablement à la première place (avec 66% des emprunts de livres jeunesse), On notera cependant l’absence de 50 shades of grey, paru cette année-là : conservatisme des bibliothèques ou timidité des usagers ?";
 	} else return ""
-	}
+	
 }
   
 function mouseOver(d){
