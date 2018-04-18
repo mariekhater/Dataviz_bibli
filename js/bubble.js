@@ -39,15 +39,12 @@ function tooltip(d){
 
 function text_modif(focus0, focus){
 	if (focus.data.name == "Revue"){
-		return "Texte super rigolo sur combien les revues c'est cool";
+		return "Pourquoi les Parisiens vont-ils à la bibliothèque ? <br />  Principalement pour se détendre : les bandes dessinées et revues représentent XX % des emprunts parmi les XX milliers de titres les plus empruntés en 2012.";
 	} else if (focus.data.name == "Bande dessinée"){
-		return "Les BD c'est XX %";
-	} else if (focus0.data.name == "Livre" && focus.data.name == "Jeunesse"){
-		return "Les livres jeunesses ? Que des Max et Lili !!";
-	} else if (focus0.data.name == "Livre" && focus.data.name == "Adulte"){
-		return "Les lecteurs des bibliothèques empruntent quand même des livres ! Les auteurs à succès y sont bien représentés : <font color='red'>Fred Vargas</font>, <font color='green'>Guillaume Musso</font>, etc..";
-	} else {
-	return ""
+		return "Pourquoi les Parisiens vont-ils à la bibliothèque ? <br />  Principalement pour se détendre : les bandes dessinées et revues représentent XX % des emprunts parmi les XX milliers de titres les plus empruntés en 2012.";
+	} else if (focus0.data.name == "Livre"){
+		return "Les lecteurs des bibliothèques empruntent quand même des livres ! Les auteurs à succès y sont bien représentés : Fred Vargas, Guillaume Musso, etc. Chez les enfants, c’est la série des Max et Lili qui est incontestablement à la première place, <br />  On notera cependant l’absence de 50 shades of grey, paru cette année-là : conservatisme des bibliothèques ou timidité des usagers ?";
+	} else return ""
 	}
 }
   
@@ -64,8 +61,8 @@ function mouseOver(d){
 function color_filling(d){
 	if (d.data.auteur == "Saint-Mars, Dominique de" || d.data.auteur == "Saint Mars, Dominique de" || d.data.auteur == "Vargas, Fred"){
 		return "hsl(191,55.1%,65.1%)";
-	} else if (d.data.auteur == "Musso, Guillaume"){
-		return "hsl(120, 100%, 50%)";
+	if (d.data.name=="Le Point")
+		return "hsl(191,55.1%,65.1%)";
 	} else {
 	return d.children ? color(d.depth) : null;
 	}
