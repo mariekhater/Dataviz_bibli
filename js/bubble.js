@@ -38,11 +38,11 @@ function tooltip(d){
 	}
 
 function text_modif(focus0, focus){
-	if (focus.data.name == "Revue"){
+	if (focus.data.name == "Revue"||focus0.data.name == "Revue"){
 		return "Pourquoi les Parisiens vont-ils à la bibliothèque ? <br />  Principalement pour se détendre : les revues représentent 45 % des emprunts parmi les 1 000 titres les plus empruntés en 2012.";
-	} else if (focus.data.name == "Bande dessinée"){
+	} else if (focus.data.name == "Bande dessinée"||focus0.data.name == "Bande dessinée"){
 		return "Pourquoi les Parisiens vont-ils à la bibliothèque ? <br />  Principalement pour se détendre : les bandes dessinées représentent 31 % des emprunts parmi les 1 000 titres les plus empruntés en 2012.";
-	} else if (focus0.data.name == "Livre"){
+	} else if (focus0.data.name == "Livre"||focus.data.name == "Livre"){
 		return "Les lecteurs des bibliothèques empruntent quand même des livres ! Les auteurs à succès y sont bien représentés : Fred Vargas, Guillaume Musso, etc. <br />  Chez les enfants, c’est la série des Max et Lili qui est incontestablement à la première place (avec 66% des emprunts de livres jeunesse), On notera cependant l’absence de 50 shades of grey, paru cette année-là : conservatisme des bibliothèques ou timidité des usagers ?";
 	} else return ""
 	
@@ -61,7 +61,7 @@ function mouseOver(d){
 function color_filling(d){
 	if (d.data.auteur == "Saint-Mars, Dominique de" || d.data.auteur == "Saint Mars, Dominique de"){
 		return "hsl(191,55.1%,65.1%)";
-	if (d.data.children.name=="Le Point")
+	if (d.data.children.children.name=="Le Point")
 		return "hsl(191,55.1%,65.1%)";
 	} else {
 	return d.children ? color(d.depth) : null;
