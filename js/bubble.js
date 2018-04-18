@@ -39,11 +39,11 @@ function tooltip(d){
 
 function text_modif(focus0, focus){
 	if (focus.data.name == "Revue"){
-		return "Pourquoi les Parisiens vont-ils à la bibliothèque ? <br />  Principalement pour se détendre : les bandes dessinées et revues représentent XX % des emprunts parmi les XX milliers de titres les plus empruntés en 2012.";
+		return "Pourquoi les Parisiens vont-ils à la bibliothèque ? <br />  Principalement pour se détendre : les revues représentent 45 % des emprunts parmi les 1 000 titres les plus empruntés en 2012.";
 	} else if (focus.data.name == "Bande dessinée"){
-		return "Pourquoi les Parisiens vont-ils à la bibliothèque ? <br />  Principalement pour se détendre : les bandes dessinées et revues représentent XX % des emprunts parmi les XX milliers de titres les plus empruntés en 2012.";
+		return "Pourquoi les Parisiens vont-ils à la bibliothèque ? <br />  Principalement pour se détendre : les bandes dessinées représentent 31 % des emprunts parmi les 1 000 titres les plus empruntés en 2012.";
 	} else if (focus0.data.name == "Livre"){
-		return "Les lecteurs des bibliothèques empruntent quand même des livres ! Les auteurs à succès y sont bien représentés : Fred Vargas, Guillaume Musso, etc. Chez les enfants, c’est la série des Max et Lili qui est incontestablement à la première place, <br />  On notera cependant l’absence de 50 shades of grey, paru cette année-là : conservatisme des bibliothèques ou timidité des usagers ?";
+		return "Les lecteurs des bibliothèques empruntent quand même des livres ! Les auteurs à succès y sont bien représentés : Fred Vargas, Guillaume Musso, etc. Chez les enfants, c’est la série des <fontcolor="#75c5d7">Max et Lili </font> qui est incontestablement à la première place, <br />  On notera cependant l’absence de 50 shades of grey, paru cette année-là : conservatisme des bibliothèques ou timidité des usagers ?";
 	} else return ""
 	}
 }
