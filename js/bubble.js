@@ -65,7 +65,7 @@ function color_filling(d){
 	else if (d.data.name == "Le Point" || d.data.name == "Capital : l'essentiel de l'économie" ||  d.data.name == "Le Figaro magazine" ||  d.data.name == "Madame Figaro" ||  d.data.name == "L'Express"){
 		return "hsl(191,55.1%,65.1%)";
 	} 
-	else if (d.data.name == "Marianne" || d.data.name == "Der Spiegel : das deutsch Nachrichten-Magazin" || d.data.name == "Télérama" ||  d.data.name == "Le Monde diplomatique : journal des cercles diplomatiques et des grandes organisations internationales" ||  d.data.name == "Charlie hebdo" ||  d.data.name == "Le Canard enchaîné : journal humoristique hebdomadaire"d.data.name == "Le Nouvel observateur" ||  d.data.name == "Alternatives économiques : journal d'information critique sur l'actualité économique et sociale" ||  d.data.name == "Charlie hebdo" ||  d.data.name == "Le Canard enchaîné : journal humoristique hebdomadaire"){
+	else if (d.data.name == "Marianne" || d.data.name == "Der Spiegel : das deutsch Nachrichten-Magazin" || d.data.name == "Télérama" ||  d.data.name == "Le Monde diplomatique : journal des cercles diplomatiques et des grandes organisations internationales" ||  d.data.name == "Charlie hebdo" ||  d.data.name == "Le Canard enchaîné : journal humoristique hebdomadaire" ||  d.data.name == "Le Nouvel observateur" ||  d.data.name == "Alternatives économiques : journal d'information critique sur l'actualité économique et sociale" ||  d.data.name == "Charlie hebdo" ||  d.data.name == "Le Canard enchaîné : journal humoristique hebdomadaire"){
 		return "hsl(0, 56%, 50%)";
 	}
 	else {
