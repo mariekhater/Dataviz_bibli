@@ -61,7 +61,7 @@ function mouseOver(d){
 function color_filling(d){
 	if (d.data.auteur == "Saint-Mars, Dominique de" || d.data.auteur == "Saint Mars, Dominique de"){
 		return "hsl(191,55.1%,65.1%)";
-	if (d.data.name=="Revue" && d.data.children.name="Adulte")
+	if (d.data.name=="Le Point")
 		return "hsl(191,55.1%,65.1%)";
 	} else {
 	return d.children ? color(d.depth) : null;
