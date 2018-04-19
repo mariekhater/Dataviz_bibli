@@ -62,7 +62,7 @@ function color_filling(d){
 	if (d.data.auteur == "Saint-Mars, Dominique de" || d.data.auteur == "Saint Mars, Dominique de"){
 		return "hsl(191,55.1%,65.1%)";
 	}
-	else if (d.data.name == "Le Point") || (d.data.name == "Capital : l'essentiel de l'économie") ||  (d.data.name == "Le Figaro magazine") ||  (d.data.name == "Madame Figaro") ||  (d.data.name == "L'Express"){
+	else if (d.data.name == "Le Point" || d.data.name == "Capital : l'essentiel de l'économie" ||  d.data.name == "Le Figaro magazine" ||  d.data.name == "Madame Figaro" ||  d.data.name == "L'Express"){
 		return "hsl(191,55.1%,65.1%)";
 	} 
 	else {
