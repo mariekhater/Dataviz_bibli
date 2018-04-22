@@ -5,7 +5,7 @@ var svg = d3.select("#bubble"),
 
 function color(int){
 	var c = ["hsl(190,100%,100%)", "hsl(190,100%,80%)","hsl(190,100%,60%)","hsl(190,100%,40%)","hsl(190,100%,20%)"];
-	return c[int-1]
+	return c[int+1]
 }
 
 var pack = d3.pack()
