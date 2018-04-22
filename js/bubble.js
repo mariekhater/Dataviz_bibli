@@ -5,7 +5,7 @@ var svg = d3.select("#bubble"),
 
 var color = d3.scaleLinear()
     .domain([-1, 3])
-    .range(["hsl(190,100%,80%)", "hsl(190,100%,20%)"])
+    .range(["hsl(190,100%,100%)", "hsl(190,100%,20%)"])
     .interpolate(d3.interpolateHcl);
 
 var pack = d3.pack()
