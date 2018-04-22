@@ -17,10 +17,26 @@
   js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.12';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+  <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
   
   <div class="fb-share-button" data-href="https://mariekhater.github.io/Dataviz_bibli" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmariekhater.github.io%2FDataviz_bibli&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a></div>
   <a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=&Paris%20via%20ses%20biblis&url=https%3A%2F%2Fmariekhater.github.io%2FDataviz_bibli%2F"
+  href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmariekhater.github.io%2FDataviz_bibli%2F"
   data-size="large">
 Tweet</a>
 </div>
