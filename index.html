@@ -43,22 +43,6 @@
 <body>
 
 	<body id="page-top">
-
-
-
-    <!-- Header
-    <header class="masthead bg-primary text-white text-center">
-      <div class="container">
-        <h1 class="text-uppercase mb-0">BIBLIPARIS </h1>
-        <hr class="star-light">
-        <h2 class="font-weight-light mb-0">Paris à travers ses bibiliothèques</h2>
-        <br>
-        <p class="lead mb-0">Vous trouverez dans cette bibliothèque numérique quelques ouvrages vous contant une histoire de Paris à travers ses bibliothèques. À l''heure du digital, quelle place existe-t-il encore pour les bibliothèques de la Ville Lumière ? Ces lieux sont-ils encore des axes majeurs dans la diffusion des connaissances ? Observe-t-on des inégalités d'accès à cette connaissance ? <br> Pour répondre à ces questions, nous utiliserons les données publiques fournies par la Mairie de Paris sur les différentes bibliothèques et habitudes de consommation liées à celles-ci.</p>
-      </div>
-    </header> -->
-
-    <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio">
    
             
 <div id="canvas">
@@ -68,8 +52,8 @@
       <div depth="5" class="hard front-side"> <div class="depth"></div> </div>
       <div class="own-size"></div>
       <div class="own-size even"></div>
-     <!-- <div class="hard fixed back-side p10"> <div class="depth"></div> </div>-->
-      <div class="hard p16"></div>
+      <div class="hard fixed back-side p19"> <div class="depth"></div> </div>
+      <div class="hard p20"></div>
     </div>
   </div>
   <div id="slider-bar" class="turnjs-slider">
@@ -215,7 +199,7 @@ function loadApp() {
     autoCenter: true,
     gradients: true,
     duration: 1000,
-    pages: 16,
+    pages: 20,
     when: {
       turning: function(e, page, view) {
         
@@ -254,9 +238,9 @@ function loadApp() {
           $('.sj-book .p2').removeClass('fixed');
 
         if (page<book.turn('pages'))
-          $('.sj-book .p16').addClass('fixed');
+          $('.sj-book .p19').addClass('fixed');
         else
-          $('.sj-book .p16').removeClass('fixed');
+          $('.sj-book .p19').removeClass('fixed');
 
         Hash.go('page/'+page).update();
           
@@ -341,7 +325,7 @@ yepnope({
           </div>
         </div>
       </div>
-    </section>
+
 
 
 
