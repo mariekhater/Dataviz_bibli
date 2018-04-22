@@ -1,5 +1,5 @@
 var svg = d3.select("#bubble"),
-    margin = 20,
+    margin = 25,
     diameter = +svg.attr("width"),
     g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
