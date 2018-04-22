@@ -4,7 +4,7 @@ var svg = d3.select("#bubble"),
     g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
 function color(int){
-	var c = ["hsl(190,100%,100%)", "hsl(190,100%,40%)","hsl(190,100%,35%)","hsl(190,100%,30%)"];
+	var c = ["hsl(190,100%,100%)", "hsl(190,100%,42%)","hsl(190,100%,31%)","hsl(190,100%,25%)"];
 	return c[int+1]
 }
 
