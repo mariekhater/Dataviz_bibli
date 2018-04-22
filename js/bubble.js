@@ -3,9 +3,7 @@ var svg = d3.select("#bubble"),
     diameter = +svg.attr("width"),
     g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
-var color = d3.scaleLinear()
-    .domain([-1, 3])
-    .range(["hsl(190,100%,100%)", "hsl(190,100%,20%)"])
+var color = ["hsl(190,100%,100%)", "hsl(190,100%,80%)","hsl(190,100%,60%)","hsl(190,100%,40%)","hsl(190,100%,20%)"]
 
 var pack = d3.pack()
     .size([diameter - margin, diameter - margin])
