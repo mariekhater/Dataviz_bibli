@@ -39,7 +39,7 @@ function tooltip(d){
 
 function text_modif(focus0, focus){
 	if (focus.data.name == "Revue"||focus0.data.name == "Revue"){
-		return "Pourquoi les Parisiens vont-ils à la bibliothèque ? <br />  Principalement pour se détendre : les revues représentent 45 % des emprunts parmi les 1 000 titres les plus empruntés en 2012.<br /> Les lecteurs sont aussi très friands de revues : Elle, Le Figaro Magazine ou Le Point chez les adultes, Astrapi, Le Journal de Mickey et les autres J’aime Lire et Belles histoires chez les enfants. ";
+		return "Pourquoi les Parisiens vont-ils à la bibliothèque ? <br />  Principalement pour se détendre : les revues représentent 45 % des emprunts parmi les 1 000 titres les plus empruntés en 2012.<br /> Les lecteurs sont aussi très friands de revues : Elle, Le Figaro Magazine ou Le Point chez les adultes, Astrapi, Le Journal de Mickey ou encore J’aime Lire et Belles histoires chez les enfants. <br/>Les revues à ligne éditoriales marquées politiquement restent minoritaires avec seulement 10% des emprunts (également répartis entre droite et gauche).";
 	} else if (focus.data.name == "Bande dessinée"||focus0.data.name == "Bande dessinée"){
 		return "Pourquoi les Parisiens vont-ils à la bibliothèque ? <br />  Principalement pour se détendre : les bandes dessinées représentent 31 % des emprunts parmi les 1 000 titres les plus empruntés en 2012. <br />  Les principales références sont intemporelles : chez les adultes, Tintin, Astérix et Obélix sont aux premières loges, mais on trouve aussi le manga Fairy Tail, très populaire,";
 	} else if (focus0.data.name == "Livre"||focus.data.name == "Livre"){
